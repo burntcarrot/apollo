@@ -13,4 +13,4 @@ Apollo SDKs help in:
 - Exposing health data to an endpoint
 
 List of available SDKs:
-- [Redis SDK](/docs/redis-sdk)
+- [Redis SDK](/apollo/docs/redis-sdk)

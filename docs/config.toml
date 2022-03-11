@@ -32,7 +32,7 @@ summaryLength = 30
   homepage_button_link = '/docs'
   homepage_button_text = 'Docs'
   homepage_intro = 'A distributed deep health check system.'
-  # homepage_image = '/images/terminal.gif'
+  homepage_image = '/img/steps.png'
 
   ## You can enable to add anchor links to header elements
   # enable_anchor_link = true
