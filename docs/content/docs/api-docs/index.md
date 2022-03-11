@@ -1,9 +1,8 @@
 ---
 title: 'API Documentation'
-date: 2019-02-11T19:30:08+10:00
 draft: false
 weight: 4
-summary: API Documentation
+summary: API Documentation for the Apollo server.
 ---
 
 Apollo Server exposes three endpoints:
@@ -16,7 +15,15 @@ Apollo Server exposes three endpoints:
 
 ## `/api/register`
 
-**Request Params**:
+Endpoint for registering a service to the Apollo server.
+
+A service can be registered through:
+- Apollo SDKs (for example, `apollo-go-redis`)
+- Manually through API clients, etc.
+
+The ideal way is to use Apollo SDKs. Integrate Apollo SDKs into your application to register new services to the Apollo server.
+
+**Request Body Params**:
 - `id`: ID for the service
 - `name`: Service name
 - `uri`: The `/health` endpoint exposed by the service
@@ -25,13 +32,36 @@ Apollo Server exposes three endpoints:
 
 ```json
 {
-    "id": 1,
+    "id": "26F5QP6q4UxImHkIr9miSHj3G3U",
     "name": "Service_1",
     "uri": "localhost:9989/health"
 }
 ```
 
+---
+
 ## `/api/health`
+
+Endpoint for fetching health status of services registered to the Apollo server.
+
+Example response:
+
+```json
+{
+    "results":{
+        // TODO:
+    }
+}
+```
+
+---
+
+## `/api/health/:id`
+
+Endpoint for fetching health status of a **certain** service registered to the Apollo server.
+
+**Params**:
+- `id`: The unique ID for the service (KSUID)
 
 Example response:
 
