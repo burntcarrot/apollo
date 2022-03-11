@@ -20,11 +20,11 @@ jobs:
           hugo-version: 'latest'
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --source docs/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/hugo-docs'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./docs/public
