@@ -1,4 +1,4 @@
-baseURL = "www.example.com"
+baseURL = "https://burntcarrot.github.com/apollo"
 languageCode = "en-us"
 title = "Apollo"
 themesDir = "themes"
