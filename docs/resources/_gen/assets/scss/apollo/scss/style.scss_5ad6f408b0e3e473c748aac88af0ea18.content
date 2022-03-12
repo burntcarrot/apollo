@@ -7587,7 +7587,6 @@ p {
   padding: 8px 15px 6px 15px;
   background: #e91d61;
   font-weight: normal;
-  text-transform: uppercase;
   color: white;
   text-decoration: none;
   -webkit-transition: all 0.15s ease;

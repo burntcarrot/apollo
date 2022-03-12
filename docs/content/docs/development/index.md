@@ -45,6 +45,15 @@ go run cmd/apollo/main.go config --path config.yaml
 
 **Makefile** coming soon.
 
+### Architecture
+
+Here is the complete architecture of Apollo:
+
+![Architecture](architecture.png)
+
+Service data is stored using Redis, here is the data model:
+
+![Data Model](redis-model.png)
 
 ## Apollo SDKs
 

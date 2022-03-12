@@ -35,7 +35,7 @@ summaryLength = 30
   homepage_image = '/img/steps.png'
 
   ## You can enable to add anchor links to header elements
-  # enable_anchor_link = true
+  enable_anchor_link = true
 
   [params.homepage_meta_tags]
     meta_description = "A distributed deep health check system."

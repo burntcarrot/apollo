@@ -6,14 +6,14 @@ summary: API Documentation for the Apollo server.
 ---
 
 Apollo Server exposes three endpoints:
-- `/api/register`: for registering a service
-- `/api/health`: for retrieving health status of all services
-- `/api/health/:id`: for retrieving health status of a certain service
+- `/api/v1/register`: for registering a service
+- `/api/v1/health`: for retrieving health status of all services
+- `/api/v1/health/:id`: for retrieving health status of a certain service
 
 
 ## Routes
 
-## `/api/register`
+## `/api/v1/register`
 
 Endpoint for registering a service to the Apollo server.
 
@@ -40,9 +40,9 @@ The ideal way is to use Apollo SDKs. Integrate Apollo SDKs into your application
 
 ---
 
-## `/api/health`
+## `/api/v1/health`
 
-Endpoint for fetching health status of services registered to the Apollo server.
+Endpoint for retrieving health status of services registered to the Apollo server.
 
 Example response:
 
@@ -56,9 +56,9 @@ Example response:
 
 ---
 
-## `/api/health/:id`
+## `/api/v1/health/:id`
 
-Endpoint for fetching health status of a **certain** service registered to the Apollo server.
+Endpoint for retrieving health status of a **certain** service registered to the Apollo server.
 
 **Params**:
 - `id`: The unique ID for the service (KSUID)
